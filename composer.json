@@ -1,0 +1,14 @@
+{
+    "name": "nagoya/doukaku",
+    "description":" ",
+    "keywords":[
+    ],
+    "config":{
+        "bin-dir": "bin"
+    },
+    "autoload":{
+        "psr-0":{
+            "Nagoya\\Doukaku": "src/"
+        }
+    }
+}
