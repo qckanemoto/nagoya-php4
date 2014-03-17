@@ -1,48 +1,16 @@
-PHP.Skeleton
-=======
-A standard PHP project skeleton
----------------------------------------------
-This project was created in order to provide project skeleton to start new PHP project.
-Various config files are ready for continuous integration.
+### Nagoya.php vol.4
 
- * phpunit.xml for [phpunit](http://phpunit.de/manual/current/en/index.html)
- * build.xml for [Apache Ant](http://ant.apache.org/) / [Jenkins](http://jenkins-ci.org/)
- * .travis.yml for [Travis CI](https://travis-ci.org/)
+http://nagoyaphp.doorkeeper.jp/events/9321
 
-Requirements
-------------
- * PHP 5.3+
+### やったこと
 
-Getting started
----------------
+* [フォークじゃない 〜 横へな 2014.2.1 問題](http://nabetani.sakura.ne.jp/hena/ord18notfork/) を解いてみる
+* 時間はだいたい 1 時間半ぐらい
+* 一部、時間内に終わらなかったので終了後にクラスやテストの追加をしました
 
-### Create project
-```
- $ composer create-project php/skeleton {Vendor.Package}
- $ cd {Vendor.Package}
- $ composer dump-autoload
- $ phpunit
-```
+### 所感・反省
 
-
-Using ant
----------
-
-### Prepare
-
-Install QA(Quality Assurance) tools
-```bash
- $ ant require
-```
-Export composer bin path 
-```bash
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-```
-
-## ant
-```bash
- $ ant
- 
- $ ant test
- $ ant report
-```
+* 問題そのものを正しく理解しないまま実装を始めてしまって、途中大きく手戻りしてしまった
+* 最初は「レジ」ぐらいしかクラスは要らないかなと思ったけど、テストしたい箇所をクラス化しながら実装していたら多少クラス数が増えて OOP っぽくなった気がする
+* 逆に、実装を始める前からクラス設計するのは難しいということが分かった
+* PHP.Skeleton 超便利
